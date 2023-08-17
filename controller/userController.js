@@ -55,7 +55,7 @@ const deleteUser = async(req, res) =>{
 
 const updateUser = async(req, res) =>{
     const id = parseInt(req.params.id);
-    const {id, name, password, email } = req.body;
+    const { name, password, email } = req.body;
     await User.update({
         name: name,
         password: password,
