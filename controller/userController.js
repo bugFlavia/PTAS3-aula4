@@ -31,7 +31,7 @@ const authenticatedUser = async (req, res) =>{
         })
         return res.json({
             name: isUserAthenticated.name,
-            name: isUserAthenticated.email,
+            email: isUserAthenticated.email,
             token: token
         });
     }catch (error){
